@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hungry food"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type='text/css' href="vendor/css/normalize.css"/>
+    <link rel="stylesheet" type='text/css' href="vendor/css/grid.css"/>
+    <link rel="stylesheet" type='text/css' href="vendor/css/ionicons.min.css"/>
+    <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type='text/css' href="resources/css/style.css"/>
+    <link rel="stylesheet" type='text/css' href="resources/css/queries.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"/>
+    <title>Hungry Food</title>
+</head>
+<body>
+    <nav>
+        <div class='row nav-row'>
+            <a class='mobile-nav-icon' id='js--nav-icon'><i class='ion-navicon-round'></i></a>
+            <ul class='main-nav' id='js--main-nav'>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">About</a></li>  
+            </ul>
+        </div>
+    </nav>
+    <header> 
+        <div class="hero-text-box box">
+            <h1>Find a Food or Drink at Search</h1>
+            <form class="hero-text-form">
+                <input type="text">
+                <button><i class="ion-search"></i> Search</button>
+            </form>
+        </div>
+    </header>
+    <section class='section-features box'>
+        <div class='row'>
+            <div class='tab-center'>
+                <div class='tab'>
+                    <button class='tab-item' data-id='js--tab-latest'>
+                        Latest Menu
+                    </button>
+                    <button class='tab-item' data-id='js--tab-top-menu'>
+                        Top Menu
+                    </button>
+                    <button class='tab-item' data-id='js--tab-top-food'>
+                        Top Food Menu
+                    </button>
+                    <button class='tab-item' data-id='js--tab-top-drink'>
+                        Top Drink Menu
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class='tab-content' id='js--tab-latest'>
+            <div class='row'>
+                <h2>Latest Menu</h2>
+            </div>
+            <div class='row'>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Cheesecake</div>
+                    <img class="card-img" src="resources/img/cheesecake.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Burritos</div>
+                    <img class="card-img" src="resources/img/burritos.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Banana Split</div>
+                    <img class="card-img" src="resources/img/banana split.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Chicken Bites</div>
+                    <img class="card-img" src="resources/img/chicken bites.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Espresso</div>
+                    <img class="card-img" src="resources/img/espresso.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Katsudon</div>
+                    <img class="card-img" src="resources/img/katsudon.jpeg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Fried Rice</div>
+                    <img class="card-img" src="resources/img/fried rice.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Milkshake</div>
+                    <img class="card-img" src="resources/img/milkshake.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='center'>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='tab-content' id='js--tab-top-menu' style='display:none;'>
+            <div class='row'>
+                <h2>Top All Menu</h2>
+            </div>      
+            <div class="row">
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Carbonara</div>
+                    <img class="card-img" src="resources/img/carbonara.jpg"/>
+                    <p>
+                        Rating: 
+                        <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Mojito</div>
+                    <img class="card-img" src="resources/img/mojito.jpg"/>
+                    <p>
+                        Rating: 
+                        <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Blue Martini</div>
+                    <img class="card-img" src="resources/img/blue martini.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-half rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Burger</div>
+                    <img class="card-img" src="resources/img/burger.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-half rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Tenderloin</div>
+                    <img class="card-img" src="resources/img/tenderloin.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-half rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>      
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Fruit Punch</div>
+                    <img class="card-img" src="resources/img/fruit punch.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-half rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Sushi</div>
+                    <img class="card-img" src="resources/img/Sushi.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Harvey Wallbanger</div>
+                    <img class="card-img" src="resources/img/harvey wallbanger.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class='tab-content' id='js--tab-top-food' style='display:none;'>
+            <div class='row'>
+                <h2>Top Food Menu</h2>
+            </div>      
+            <div class="row">
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Carbonara</div>
+                    <img class="card-img" src="resources/img/carbonara.jpg"/>
+                    <p>
+                        Rating: 
+                        <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Burger</div>
+                    <img class="card-img" src="resources/img/burger.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-half rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Tenderloin</div>
+                    <img class="card-img" src="resources/img/tenderloin.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-half rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Sushi</div>
+                    <img class="card-img" src="resources/img/Sushi.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Beef Wellington</div>
+                    <img class="card-img" src="resources/img/wellington.jpg"/>
+                    <p>
+                        Rating: 
+                        <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Pizza</div>
+                    <img class="card-img" src="resources/img/pizza.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Ramen</div>
+                    <img class="card-img" src="resources/img/ramen.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Sandwich</div>
+                    <img class="card-img" src="resources/img/sandwich.jpg"/>
+                    <p >
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class='tab-content' id='js--tab-top-drink' style='display:none;'>
+            <div class='row'>
+                <h2>Top Drink Menu</h2>
+            </div>      
+            <div class="row">
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Mojito</div>
+                    <img class="card-img" src="resources/img/mojito.jpg"/>
+                    <p>
+                        Rating: 
+                        <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Blue Martini</div>
+                    <img class="card-img" src="resources/img/blue martini.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-half rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Fruit Punch</div>
+                    <img class="card-img" src="resources/img/fruit punch.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-half rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+                <div class='col span-1-of-4 box card'>
+                    <div class="card-header">Harvey Wallbanger</div>
+                    <img class="card-img" src="resources/img/harvey wallbanger.jpg"/>
+                    <p>
+                       Rating: 
+                       <i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star rating-star"></i><i class="ion-ios-star-outline rating-star"></i>
+                    </p>
+                    <button class="card-button-add">
+                        <i class="ion-plus-round"></i>
+                        Add
+                    </button>
+                    <button class="card-button-info">
+                        <i class="ion-search"></i>
+                        Details
+                    </button>
+                </div>
+            </div>
+          
+        </div>  
+    </section>
+    <footer>
+        <div class='row'>
+            <div class='col span-1-of-2'>
+                <ul class='footer-nav'>
+                </ul>
+            </div>
+            <div class='col span-1-of-2'>
+                <ul class='social-links'>
+                    <li><a href="https://web.facebook.com/cristono.wijaya"><i class='ion-social-facebook'></i></a></li>
+                    <li><a href="https://github.com/crs014"><i class='ion-social-github'></i></a></li>
+                    <li><a href="https://twitter.com/cris0146"><i class='ion-social-twitter'></i></a></li>
+                    <li><a href="https://www.instagram.com/cristono14/"><i class='ion-social-instagram'></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/cristono-wijaya-b98a96173/"><i class='ion-social-linkedin'></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='row'>
+            <p>
+                Copyright &copy; 2020 by Cristono Portofolio. All rights reversed
+            </p>
+        </div>
+    </footer>
+    <script src="vendor/js/noframework.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+</body>
+</html>

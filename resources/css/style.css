@@ -1,0 +1,565 @@
+/*========================*/
+/*       BASIC SETUP
+/*========================*/
+* {
+    margin : 0;
+    padding:  0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, 
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix { zoom : 1; }
+.clearfix:after { 
+    content : '';
+    clear : both;
+    display : block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*========================*/
+/*   REUSABLE COMPONENTS
+/*========================*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+section {
+    padding: 80px 0 80px 0;
+}
+
+.box {
+    padding : 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;   
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/*
+* @description : headings style
+*/
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+ 
+}
+
+h1 {
+    word-spacing: 4px;
+    font-size: 240%;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #79C753;
+    content: " ";
+    width: 100px;
+    margin : 30px auto 0 auto;
+}
+
+h3:after {
+    display: block;
+    height: 2px;
+    background-color: #79C753;
+    content: " ";
+    width: 100px;
+    margin : 15px auto 0 auto;
+}
+
+/*
+* @description : paragraphs style
+*/
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#fefefe;
+    box-shadow: 0 2px 2px #c9c9c9;
+    z-index: 9999;
+}
+
+.main-nav {
+    float: left;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: display 1s;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0 8px 0;
+    color : #222;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #79C753;
+}
+
+/*
+* @description : header style
+*/
+header {
+    background-attachment: fixed;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7))), url('img/hero.png');
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+.hero-text-box {
+    text-align: center;
+    position: absolute;
+    width: 1140px;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.hero-text-box .hero-text-form input {
+    left: 20%;
+    position: relative;
+    float: left;
+    box-shadow: 0 2px 2px #191919;
+    letter-spacing: 1.3px;
+    border: 0px;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 50px 0px 0px 50px;
+    padding: 10px 20px 10px 20px;
+}
+
+.hero-text-box .hero-text-form input:focus {
+    outline: none;
+}
+
+.hero-text-box .hero-text-form button {
+    left: 20%;
+    position: relative;
+    float: left;
+    box-shadow: 0 2px 2px #191919;
+    letter-spacing: 2px;
+    margin-right: 0;
+    outline: none;
+    border: 0;
+    background-color: #264E36;
+    color: white;
+    font-size: 20px;
+    border-radius: 0px 50px 50px 0px;
+    padding: 10px 20px 10px 20px;
+}
+
+.hero-text-box .hero-text-form button:hover,
+.hero-text-box .hero-text-form button:active {
+    transition: background-color 0.2s;
+    background-color: #335b43;
+}
+
+
+/*
+* @description : mobile nav
+*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #222;
+    display: block;
+}
+
+
+/*
+* @description : icon style
+*/
+.icon-big {
+    font-size: 350%;
+    display:block;
+    color : #00539C;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color : #00539C;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top:-5px;
+    margin-right: 10px;
+}
+
+/*
+* @desciption : card style
+*/
+
+.card {
+    background-color: #d9d9d9;
+    box-shadow: 0 15px 15px #989898;
+    color: #111;
+}
+
+.card .card-header {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.card .card-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+}
+
+.card p {
+    letter-spacing: 1.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card .card-button-add {
+    background-color: #264E36;
+    color:#ddd;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1.5px;
+}
+
+.card .card-button-add:hover,
+.card .card-button-add:active {
+    transition: background-color 0.2s;
+    background-color: #335b43;
+}
+
+.card .card-button-info {
+    background-color: #6ab844;
+    color:#ddd;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1.5px;
+}
+
+.card .card-button-info:hover,
+.card .card-button-info:active {
+    transition: background-color 0.2s;
+    background-color: #74c24e;
+}
+
+
+/*
+* @description: tab menu
+*/
+
+.tab {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.tab button {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 13px 35px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-right: 1px solid #d5d5d5;
+    border-bottom:1px solid #d5d5d5;
+    letter-spacing: 2px;
+    font-size: 100%;
+}
+
+.tab button:last-child {
+    border-right: 0;
+}
+
+.tab button:hover,
+.tab button:active {
+    background-color: #6ab844;
+    color: #ddd;
+}
+ 
+
+/*
+* @description: pagination
+*/
+.pagination {
+    margin-top: 35px;
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+  
+.pagination a {
+    border: 1px solid #ccc;
+    color: #222;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+  
+.pagination a.active {
+    background-color: #6ab844;
+    color: white;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #bbb;
+}
+
+/*
+* @description: form
+*/
+.group-form {
+    margin-bottom: 15px;
+}
+
+.group-form label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px; 
+}
+
+.input-form {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 85%;
+    letter-spacing: 1px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border .1s;
+}
+
+.input-form:focus {
+    border-color: #6ab844;
+    outline: 0;
+}
+
+/*
+* @description: button
+*/
+.button-submit {
+    background-color: #264E36;
+    color:#ddd;
+    border: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1px;
+}
+
+.button-submit:hover,
+.button-submit:active {
+    transition: background-color 0.2s;
+    background-color: #335b43;
+}
+
+.button-info {
+    background-color: #6ab844;
+    color:#ddd;
+    border: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1px;
+}
+
+.button-info:hover,
+.button-info:active {
+    transition: background-color 0.2s;
+    background-color: #74c24e;
+}
+
+
+/*
+* @description: image
+*/
+.img-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 165px;
+    text-align: center;
+}
+
+.rating-star {
+    color:#DAA520;
+}
+
+
+/*
+* @description: footer style
+*/
+footer {
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-top: 1px solid  #bbb;
+    padding: 40px;
+    font-size:80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float:left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin : 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color : #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color : #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:link {
+    font-size : 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-github,
+.ion-social-instagram,
+.ion-social-linkedin {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color : #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color : #00aced;
+}
+
+.ion-social-github:hover {
+    color : #6e5494;
+}
+
+.ion-social-instagram:hover {
+    color : #517fa4;
+}
+
+.ion-social-linkedin:hover {
+    color : #2867B2;
+}
+
+footer p {
+    color : #888;
+    text-align: center;
+    margin-top: 20px;
+}
